@@ -2,12 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kameko.app">
     
+    <!-- Permission to stream Blaze-X -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:label="Kameko"
+        android:icon="@drawable/logo"
         android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
         
+        <!-- The main web player screen -->
         <activity
             android:name="com.kameko.app.MainActivity"
             android:exported="true">
