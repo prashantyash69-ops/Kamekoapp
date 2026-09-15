@@ -10,14 +10,20 @@
         android:icon="@drawable/logo"
         android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
         
-        <!-- The main web player screen -->
+        <!-- 1. The App opens this Splash Screen first -->
         <activity
-            android:name="com.kameko.app.MainActivity"
+            android:name="com.kameko.app.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- 2. After 2 seconds, it secretly transitions to this Main Web Player -->
+        <activity
+            android:name="com.kameko.app.MainActivity"
+            android:exported="false">
         </activity>
 
     </application>
