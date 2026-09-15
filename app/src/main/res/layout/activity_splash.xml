@@ -4,6 +4,6 @@
     android:layout_height="match_parent"
     android:background="#111A2C"> 
 
-    <!-- We removed the image temporarily to test the memory -->
+    <!-- Image temporarily removed for memory testing -->
 
 </RelativeLayout>
