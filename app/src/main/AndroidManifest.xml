@@ -2,28 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kameko.app">
     
-    <!-- Permission to stream Blaze-X -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:label="Kameko"
         android:icon="@drawable/logo"
-        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar"> 
+        <!-- Notice the theme is no longer 'Light' -->
         
-        <!-- 1. The App opens this Splash Screen first -->
         <activity
-            android:name="com.kameko.app.SplashActivity"
+            android:name="com.kameko.app.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 2. After 2 seconds, it secretly transitions to this Main Web Player -->
-        <activity
-            android:name="com.kameko.app.MainActivity"
-            android:exported="false">
         </activity>
 
     </application>
