@@ -23,7 +23,6 @@ public class MainActivity extends Activity {
 
         webView.setWebViewClient(new WebViewClient());
         
-        // Connects directly to your deployed site
         webView.loadUrl("https://blaze-x-beta.vercel.app"); 
     }
 
